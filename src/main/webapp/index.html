@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html>
     <head>
         <title>Registro de Productos</title>
@@ -6,25 +6,31 @@
     </head>
     <body>
 
+        <!-- Título del formulario -->
         <h2>Registro de Productos Papelería</h2>
 
+        <!-- Formulario para registrar productos -->
         <form action="ProductoServlet" method="post">
 
+            <!-- Campo para ingresar el nombre del producto -->
             Nombre del producto:
             <br>
-            <input type="text" name="nombre">
+            <input type="text" name="nombre" required>
             <br><br>
 
+            <!-- Campo para ingresar el precio -->
             Precio:
             <br>
-            <input type="number" name="precio">
+            <input type="number" name="precio" min="1" required>
             <br><br>
 
+            <!-- Campo para ingresar la cantidad -->
             Cantidad:
             <br>
-            <input type="number" name="cantidad">
+            <input type="number" name="cantidad" min="0" required>
             <br><br>
 
+            <!-- Botón para guardar el producto -->
             <input type="submit" value="Guardar Producto">
 
         </form>
